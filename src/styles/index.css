@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import './tailwind.css';
+
+@font-face {
+  font-family: 'Telegraf';
+  src: url('/fonts/Telegraf-Regular.woff2') format('woff2'),
+       url('/fonts/Telegraf-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Telegraf';
+  src: url('/fonts/Telegraf-UltraLight.woff2') format('woff2'),
+       url('/fonts/Telegraf-UltraLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Telegraf', sans-serif;
+}

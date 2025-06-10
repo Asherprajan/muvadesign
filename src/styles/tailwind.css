@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Muva Brand Colors */
+    --muva-orange: #f74b02;
+    --muva-orange-light: #ff814b56;
+    --muva-beige: #dfb39e;
+    --muva-cream: #faf9f6;
+    --muva-black: #000000;
+    
+    /* Primary Colors */
+    --primary-background: #f5c21e;
+    --primary-foreground: #121722;
+    --primary-light: #ffdd57;
+    --primary-dark: #b18f0a;
+
+    /* Secondary Colors */
+    --secondary-background: #ffffff;
+    --secondary-foreground: #333333;
+    --secondary-light: #f7f7f7;
+    --secondary-dark: #222222;
+
+    /* Accent Colors */
+    --accent-color: #ff5733;
+    --accent-foreground: #ffffff;
+    --accent-light: #ff8268;
+    --accent-dark: #cc4722;
+
+    /* Border Colors */
+    --border-primary: #cccccc;
+    --border-secondary: #999999;
+    --border-light: #e0e0e0;
+    --border-dark: #666666;
+  }
+}
+
+@layer utilities {
+  /* Muva Brand Utilities */
+  .bg-muva-orange {
+    background-color: var(--muva-orange);
+  }
+
+  .bg-muva-orange-light {
+    background-color: var(--muva-orange-light);
+  }
+
+  .bg-muva-beige {
+    background-color: var(--muva-beige);
+  }
+
+  .bg-muva-cream {
+    background-color: var(--muva-cream);
+  }
+
+  .text-muva-black {
+    color: var(--muva-black);
+  }
+
+  /* Background Color Utilities */
+  .bg-primary-yellow {
+    background-color: var(--primary-background);
+  }
+
+  .bg-primary-light {
+    background-color: var(--primary-light);
+  }
+
+  .bg-primary-dark {
+    background-color: var(--primary-dark);
+  }
+
+  .bg-secondary-white {
+    background-color: var(--secondary-background);
+  }
+
+  .bg-secondary-light {
+    background-color: var(--secondary-light);
+  }
+
+  .bg-secondary-dark {
+    background-color: var(--secondary-dark);
+  }
+
+  .bg-accent {
+    background-color: var(--accent-color);
+  }
+
+  .bg-accent-light {
+    background-color: var(--accent-light);
+  }
+
+  .bg-accent-dark {
+    background-color: var(--accent-dark);
+  }
+
+  /* Text Color Utilities */
+  .text-primary-black {
+    color: var(--primary-foreground);
+  }
+
+  .text-secondary-gray {
+    color: var(--secondary-foreground);
+  }
+
+  .text-accent-white {
+    color: var(--accent-foreground);
+  }
+
+  /* Border Color Utilities */
+  .border-primary {
+    border-color: var(--border-primary);
+  }
+
+  .border-secondary {
+    border-color: var(--border-secondary);
+  }
+
+  .border-light {
+    border-color: var(--border-light);
+  }
+
+  .border-dark {
+    border-color: var(--border-dark);
+  }
+}

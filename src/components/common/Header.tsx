@@ -1,0 +1,28 @@
+'use client';
+
+import React from 'react';
+import Image from 'next/image';
+
+const Header: React.FC = () => {
+  return (
+    <header className="flex justify-between items-center px-4 sm:px-8 py-4 sm:py-8">
+      <div className="flex items-center">
+        <h1 className="text-2xl sm:text-[40px] font-extrabold leading-[1.1] text-black">muva</h1>
+        <Image 
+          src="/images/logo.png" 
+          alt="Logo accent" 
+          width={5} 
+          height={6} 
+          className="ml-1 sm:ml-2"
+        />
+      </div>
+      
+      <div className="relative">
+        <div className="w-[30px] h-[30px] sm:w-[37px] sm:h-[39px] bg-muva-orange rounded-[5px]"></div>
+        <div className="absolute top-1 left-1 sm:top-2 sm:left-2 w-[30px] h-[30px] sm:w-[37px] sm:h-[39px] bg-muva-orange-light rounded-[5px]"></div>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
