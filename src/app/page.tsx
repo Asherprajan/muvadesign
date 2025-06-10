@@ -389,6 +389,10 @@ const ProjectsSection = () => {
 };
 
 export default function HomePage() {
+  const handleScheduleCall = () => {
+    window.open('https://wa.me/+919719222803', '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-muva-cream font-telegraf">
       <Header />
@@ -402,15 +406,12 @@ export default function HomePage() {
           </h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-24 mb-16 sm:mb-24">
-          <div>
-            <p className="text-lg sm:text-2xl font-light leading-relaxed text-black/75 mb-6">
-              Muva is a design-first visualisation studio crafting cinematic narratives for unbuilt
-              architecture.
+          <div style={{ marginLeft: '10px' }}>
+              <p className="text-base sm:text-xl font-light leading-relaxed text-black/75 mb-4">
+              Muva crafts cinematic narratives for unbuilt architecture.
             </p>
-            <p className="text-lg sm:text-2xl font-light leading-relaxed text-black/75">
-              Founded by architects and visual storytellers, we blend spatial understanding with
-              visual clarity. We collaborate with developers, designers, and studios to create
-              stills, films, and immersive experiences that communicate space — before it exists.
+            <p className="text-base sm:text-xl font-light leading-relaxed text-black/75">
+              Founded by architects and visual storytellers, we create immersive experiences that communicate space.
             </p>
           </div>
         </div>
@@ -419,7 +420,7 @@ export default function HomePage() {
             <video autoPlay loop muted className="w-full h-full object-cover rounded-[20px]">
               <source src="/videos/v1.mp4" type="video/mp4" />
             </video>
-            <p className="absolute bottom-4 sm:bottom-8 left-4 sm:left-8 text-base sm:text-xl font-light text-black/90">
+            <p className="absolute bottom-4 sm:bottom-8 left-4 sm:left-8 text-base sm:text-xl font-light text-white shadow-lg">
               Empathy in Design
             </p>
           </div>
@@ -427,7 +428,7 @@ export default function HomePage() {
             <video autoPlay loop muted className="w-full h-full object-cover rounded-[20px]">
               <source src="/videos/v2.mp4" type="video/mp4" />
             </video>
-            <p className="absolute bottom-4 sm:bottom-8 left-4 sm:left-8 text-base sm:text-xl font-light text-black/90">
+            <p className="absolute bottom-4 sm:bottom-8 left-4 sm:left-8 text-base sm:text-xl font-light text-white shadow-lg">
               Detail is Everything
             </p>
           </div>
@@ -435,7 +436,7 @@ export default function HomePage() {
             <video autoPlay loop muted className="w-full h-full object-cover rounded-[20px]">
               <source src="/videos/v3.mp4" type="video/mp4" />
             </video>
-            <p className="absolute bottom-4 sm:bottom-8 left-4 sm:left-8 text-base sm:text-xl font-light text-black/90">
+            <p className="absolute bottom-4 sm:bottom-8 left-4 sm:left-8 text-base sm:text-xl font-light text-white shadow-lg">
               Visuals that Persuade
             </p>
           </div>
@@ -443,7 +444,7 @@ export default function HomePage() {
             <video autoPlay loop muted className="w-full h-full object-cover rounded-[20px]">
               <source src="/videos/v4.mp4" type="video/mp4" />
             </video>
-            <p className="absolute bottom-4 sm:bottom-8 left-4 sm:left-8 text-base sm:text-xl font-light text-black/90">
+            <p className="absolute bottom-4 sm:bottom-8 left-4 sm:left-8 text-base sm:text-xl font-light text-white shadow-lg">
               Architecture is Storytelling
             </p>
           </div>
@@ -464,7 +465,10 @@ export default function HomePage() {
               built.
             </p>
             <div className="w-1/2 h-0.5 bg-[#FF5C1D] my-6"></div>
-            <button className="bg-[#FF5C1D] text-white px-5 py-2.5 rounded-md text-sm font-medium hover:bg-[#e24e11] transition">
+            <button 
+              onClick={handleScheduleCall}
+              className="bg-[#FF5C1D] text-white px-5 py-2.5 rounded-md text-sm font-medium hover:bg-[#e24e11] transition"
+            >
               schedule a call
             </button>
           </div>
@@ -484,13 +488,7 @@ export default function HomePage() {
                     <div className="w-12 sm:w-16 h-0.5 bg-[#FF5C1D] my-3 sm:my-4"></div>
                     <p className="text-sm font-light text-black/75 w-4/5">{service.desc}</p>
                   </div>
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-black/10 flex items-center justify-center group-hover:bg-[#FF5C1D] group-hover:border-[#FF5C1D] group-hover:text-white transition-all">
-                    <ArrowRight
-                      size={16}
-                      strokeWidth={1.5}
-                      className="transition-transform group-hover:translate-x-1"
-                    />
-                  </div>
+                 
                 </div>
               ))}
             </div>
@@ -508,13 +506,7 @@ export default function HomePage() {
                     <div className="w-12 sm:w-16 h-0.5 bg-[#FF5C1D] my-3 sm:my-4"></div>
                     <p className="text-sm font-light text-black/75 w-4/5">{service.desc}</p>
                   </div>
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-black/10 flex items-center justify-center group-hover:bg-[#FF5C1D] group-hover:border-[#FF5C1D] group-hover:text-white transition-all">
-                    <ArrowRight
-                      size={16}
-                      strokeWidth={1.5}
-                      className="transition-transform group-hover:translate-x-1"
-                    />
-                  </div>
+                
                 </div>
               ))}
             </div>
@@ -527,64 +519,69 @@ export default function HomePage() {
       {/* Work With Us Section */}
       <section className="px-4 sm:px-8 py-16">
         <h2 className="text-[36px] sm:text-[57px] font-light leading-[1.1] text-black mb-8">
-          work with us
+          Our 4-Step Visualization Process
         </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 mb-8">
+        <p className="text-base sm:text-lg font-light text-black/75 mb-8">
+          At muva, we streamline complexity into a clear, efficient four-step process to bring your designs to life:
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 sm:gap-8 mb-8">
           <div className="relative">
             <div className="relative">
               <div className="w-[13px] h-[13px] bg-muva-beige rounded-full mb-4 relative z-10"></div>
+              <div className="absolute top-[6px] left-[13px] h-[1px] w-[calc(100%-2rem)] bg-muva-beige block sm:hidden"></div>
               <div className="absolute top-[6px] left-[13px] h-[1px] w-[calc(100%+2rem)] bg-muva-beige hidden sm:block"></div>
             </div>
             <h3 className="text-base sm:text-[15px] font-light leading-[1.2] text-black/79 mb-2">
-              Initial Consultation
+              Concept & Data Collection
             </h3>
             <p className="text-xs sm:text-[12px] font-light leading-[1.2] text-black/79">
-              Share your requirements with our team, and we'll provide personalised guidance
-              tailored to your needs.
+              We start by understanding your vision and gathering all necessary project information—drawings, models, materials, and desired mood. This defines the project scope and sets the foundation.
             </p>
           </div>
           <div className="relative">
             <div className="relative">
               <div className="w-[13px] h-[13px] bg-muva-beige rounded-full mb-4 relative z-10"></div>
+              <div className="absolute top-[6px] left-[13px] h-[1px] w-[calc(100%-2rem)] bg-muva-beige block sm:hidden"></div>
               <div className="absolute top-[6px] left-[13px] h-[1px] w-[calc(100%+2rem)] bg-muva-beige hidden sm:block"></div>
             </div>
             <h3 className="text-base sm:text-[15px] font-light leading-[1.2] text-black/79 mb-2">
-              Detailed Assessment
+              3D Scene Assembly & Draft Renders
             </h3>
             <p className="text-xs sm:text-[12px] font-light leading-[1.2] text-black/79">
-              We evaluate your inquiry to recommend the best products or service, ensuring optimal
-              solutions for your business.
+              Our team builds or refines the 3D model, sets up the environment, and establishes initial camera angles. You'll receive draft renders for feedback on composition and overall layout.
             </p>
           </div>
           <div className="relative">
             <div className="relative">
               <div className="w-[13px] h-[13px] bg-muva-beige rounded-full mb-4 relative z-10"></div>
+              <div className="absolute top-[6px] left-[13px] h-[1px] w-[calc(100%-2rem)] bg-muva-beige block sm:hidden"></div>
               <div className="absolute top-[6px] left-[13px] h-[1px] w-[calc(100%+2rem)] bg-muva-beige hidden sm:block"></div>
             </div>
             <h3 className="text-base sm:text-[15px] font-light leading-[1.2] text-black/79 mb-2">
-              Customized Quotation
+              Material, Lighting & Refinement
             </h3>
             <p className="text-xs sm:text-[12px] font-light leading-[1.2] text-black/79">
-              Receive a competitive, transparent quote crafted to match your specifications and
-              budget.
+              We meticulously apply realistic materials, craft the perfect lighting, and integrate detailed assets. We then provide refined renders for your comprehensive review and incorporate your revisions.
             </p>
           </div>
           <div className="relative">
             <div className="relative">
               <div className="w-[13px] h-[13px] bg-muva-beige rounded-full mb-4 relative z-10"></div>
+              <div className="absolute top-[6px] left-[13px] h-[1px] w-[calc(100%-2rem)] bg-muva-beige block sm:hidden"></div>
+              <div className="absolute top-[6px] left-[13px] h-[1px] w-[calc(100%+2rem)] bg-muva-beige hidden sm:block"></div>
             </div>
             <h3 className="text-base sm:text-[15px] font-light leading-[1.2] text-black/79 mb-2">
-              Seamless Delivery
+              Final Production & Delivery
             </h3>
             <p className="text-xs sm:text-[12px] font-light leading-[1.2] text-black/79">
-              Once confirmed, we ensure timely delivery with ongoing support to guarantee your
-              satisfaction.
+              After approvals, we proceed with high-resolution rendering and expert post-production to achieve photorealistic results. The final, stunning visuals are then delivered to you in the required formats.
             </p>
           </div>
         </div>
         <Button
           variant="primary"
           className="bg-muva-orange text-white px-4 sm:px-6 py-2 sm:py-3 rounded-[5px]"
+          onClick={handleScheduleCall}
         >
           schedule a call
         </Button>

@@ -5,6 +5,10 @@ import Image from 'next/image';
 import Button from '../ui/Button';
 
 const HeroSection: React.FC = () => {
+  const handleScheduleCall = () => {
+    window.open('https://wa.me/+919719222803', '_blank');
+  };
+
   return (
     // Use flexbox for vertical centering on mobile, revert to block for desktop.
     <section className="min-h-screen px-4 sm:px-8 pt-16 sm:pt-32 pb-16 relative flex flex-col justify-center sm:block">
@@ -18,7 +22,11 @@ const HeroSection: React.FC = () => {
         
         {/* Button container: in-flow and centered on mobile, absolute on desktop */}
         <div className="mt-8 sm:absolute sm:bottom-32 sm:right-8 sm:mt-0">
-          <Button variant="primary" className="text-sm sm:text-base bg-muva-orange text-white px-4 sm:px-6 py-2 sm:py-3 rounded-[5px]">
+          <Button 
+            variant="primary" 
+            className="text-sm sm:text-base bg-muva-orange text-white px-4 sm:px-6 py-2 sm:py-3 rounded-[5px]"
+            onClick={handleScheduleCall}
+          >
             schedule a call
           </Button> 
         </div>

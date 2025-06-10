@@ -7,13 +7,12 @@ const Header: React.FC = () => {
   return (
     <header className="flex justify-between items-center px-4 sm:px-8 py-4 sm:py-8">
       <div className="flex items-center">
-        <h1 className="text-2xl sm:text-[40px] font-extrabold leading-[1.1] text-black">muva</h1>
         <Image 
-          src="/images/logo.png" 
+          src="/images/muva.png" 
           alt="Logo accent" 
-          width={5} 
-          height={6} 
-          className="ml-1 sm:ml-2"
+          width={80} 
+          height={96} 
+          className="ml-1 sm:ml-2 bg-transparent"
         />
       </div>
       
