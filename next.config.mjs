@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   productionBrowserSourceMaps: true,
-  allowedDevOrigins:['.amazonaws.com', '.builtwithrocket.new'],
+
   distDir: process.env.DIST_DIR || '.next',
   typescript: {
     ignoreBuildErrors: true,

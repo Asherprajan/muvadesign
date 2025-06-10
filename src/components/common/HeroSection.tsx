@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
     <section className="min-h-screen px-4 sm:px-8 pt-16 sm:pt-32 pb-16 relative flex flex-col justify-center sm:block">
       
       {/* Content wrapper: centered on mobile, left-aligned on desktop */}
-      <div className="text-center sm:text-left">
+      <div className="text-left">
         <h1 className="text-[80px] sm:text-[180px] font-light leading-[0.9] tracking-[-0.02em] text-black">
           designing<br />
           the unbuilt.
@@ -25,7 +25,7 @@ const HeroSection: React.FC = () => {
       </div>
 
       {/* Scroll down indicator remains at the bottom */}
-      <div className="sticky bottom-8 sm:bottom-16 w-full flex flex-col items-center animate-bounce">
+      <div className="hidden sm:hidden absolute left-1/2 bottom-4 sm:bottom-12 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
         <Image 
           src="/images/img_vector_6.svg" 
           alt="Arrow" 
