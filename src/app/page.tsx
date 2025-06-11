@@ -202,13 +202,13 @@ const projects = [
     image: "/images/The-White-Manor.jpg"
   },
   {
-    name: "Legacy-Heights.jpg",
+    name: "Legacy Heights",
     type: "Premium Mixed-Use Residential Complex",
     location: "Tashkent, Uzbekistan",
     image: "/images/Legacy-Heights.jpg"
   },
   {
-    name: "Hello World",
+    name: "Resideal Property",
     type: "Residential Home Office",
     location: "Kochi, India",
     image: "/images/HelloWorld.jpg"
@@ -455,11 +455,11 @@ export default function HomePage() {
       <section className="px-4 sm:px-8 py-16 sm:py-32 bg-[#f9f7f3]">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
           {/* Left Column */}
-          <div className="lg:col-span-2 max-w-md mb-12 lg:mb-0 lg:-mt-20">
+          <div className="lg:col-span-2 max-w-md mb-12 lg:mb-0">
             <h2 className="text-[36px] sm:text-[57px] font-light leading-[1] tracking-[-0.02em] text-black mb-8 lg:mb-12">
               services
             </h2>
-            <p className="text-lg sm:text-2xl font-light leading-relaxed text-black/75 mb-6">
+            <p className="text-base sm:text-lg lg:text-2xl font-light leading-relaxed text-black/75 mb-6">
               Light, shadow, material, and time — we translate architecture into stories. Through
               stills, films, and interactive experiences, we help buildings speak before they're
               built.
@@ -467,46 +467,44 @@ export default function HomePage() {
             <div className="w-1/2 h-0.5 bg-[#FF5C1D] my-6"></div>
             <button 
               onClick={handleScheduleCall}
-              className="bg-[#FF5C1D] text-white px-5 py-2.5 rounded-md text-sm font-medium hover:bg-[#e24e11] transition"
+              className="bg-[#FF5C1D] text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-md text-sm font-medium hover:bg-[#e24e11] transition"
             >
               schedule a call
             </button>
           </div>
 
           {/* Right Column with Cards */}
-          <div className="lg:col-span-3 flex flex-col gap-8 lg:gap-10">
+          <div className="lg:col-span-3 flex flex-col gap-6">
             {/* First Row */}
-            <div className="flex flex-col sm:flex-row gap-6 sm:justify-end">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {services.slice(0, 2).map((service, index) => (
                 <div
                   key={index}
-                  className="bg-white border border-black/10 rounded-[20px] sm:rounded-[30px] p-4 sm:p-6 relative group cursor-pointer transition-colors duration-300 min-h-[300px] sm:min-h-[360px] w-full sm:w-[300px] flex flex-col justify-between hover:border-[#FF5C1D]"
+                  className="bg-white border border-black/10 rounded-[20px] p-4 relative group cursor-pointer transition-colors duration-300 min-h-[240px] flex flex-col justify-between hover:border-[#FF5C1D]"
                 >
                   <div>
-                    <div className="absolute top-4 sm:top-6 right-4 sm:right-6 scale-75 sm:scale-100">{service.icon}</div>
-                    <h3 className="text-lg sm:text-xl font-light text-black/90 w-2/3">{service.title}</h3>
-                    <div className="w-12 sm:w-16 h-0.5 bg-[#FF5C1D] my-3 sm:my-4"></div>
+                    <div className="absolute top-4 right-4 scale-75">{service.icon}</div>
+                    <h3 className="text-base font-light text-black/90 w-2/3">{service.title}</h3>
+                    <div className="w-12 h-0.5 bg-[#FF5C1D] my-3"></div>
                     <p className="text-sm font-light text-black/75 w-4/5">{service.desc}</p>
                   </div>
-                 
                 </div>
               ))}
             </div>
 
             {/* Second Row */}
-            <div className="flex flex-col sm:flex-row gap-6 sm:justify-start overflow-x-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {services.slice(2, 5).map((service, index) => (
                 <div
                   key={index}
-                  className="bg-white border border-black/10 rounded-[20px] sm:rounded-[30px] p-4 sm:p-6 relative group cursor-pointer transition-colors duration-300 min-h-[300px] sm:min-h-[360px] w-full sm:w-[300px] flex-shrink-0 flex flex-col justify-between hover:border-[#FF5C1D]"
+                  className="bg-white border border-black/10 rounded-[20px] sm:rounded-[30px] p-4 sm:p-6 relative group cursor-pointer transition-colors duration-300 min-h-[280px] sm:min-h-[320px] lg:min-h-[360px] flex flex-col justify-between hover:border-[#FF5C1D]"
                 >
                   <div>
                     <div className="absolute top-4 sm:top-6 right-4 sm:right-6 scale-75 sm:scale-100">{service.icon}</div>
-                    <h3 className="text-lg sm:text-xl font-light text-black/90 w-2/3">{service.title}</h3>
+                    <h3 className="text-base sm:text-lg lg:text-xl font-light text-black/90 w-2/3">{service.title}</h3>
                     <div className="w-12 sm:w-16 h-0.5 bg-[#FF5C1D] my-3 sm:my-4"></div>
                     <p className="text-sm font-light text-black/75 w-4/5">{service.desc}</p>
                   </div>
-                
                 </div>
               ))}
             </div>
