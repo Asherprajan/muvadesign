@@ -202,12 +202,6 @@ const projects = [
     image: "/images/Legacy-Heights.jpg"
   },
   {
-    name: "Resideal Property",
-    type: "Residential Home Office",
-    location: "Kochi, India",
-    image: "/images/HelloWorld.jpg"
-  },
-  {
     name: "Dubai Hills",
     type: "Residential Dining Space",
     location: "Dubai, UAE",
@@ -225,7 +219,12 @@ const projects = [
     location: "DIFC, Dubai, UAE",
     image: "/images/Limestone-House.jpg"
   },
-
+  {
+    name: "Private Residence",
+    type: "Private Entertainment Space / Home Theater",
+    location: "Mumbai, India",
+    image: "/images/Private-Residence1.jpg"
+  },
   {
     name: "Grid Point Residences",
     type: "Mixed-Use Residential Development",
