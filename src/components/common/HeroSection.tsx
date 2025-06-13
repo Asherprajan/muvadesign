@@ -10,8 +10,8 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    // Use flexbox for vertical centering on mobile, revert to block for desktop.
-    <section className="min-h-screen px-4 sm:px-8 pt-16 sm:pt-32 pb-16 relative flex flex-col justify-center sm:block">
+    // Reduced height to under 70vh
+    <section className="h-[90vh] px-4 sm:px-8 pt-16 sm:pt-32 pb-16 relative flex flex-col justify-center sm:block">
       
       {/* Content wrapper: centered on mobile, left-aligned on desktop */}
       <div className="text-left">

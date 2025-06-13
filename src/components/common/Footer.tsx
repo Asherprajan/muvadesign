@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
       
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-4 sm:space-y-0">
         <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-8">
-          <span className="text-sm sm:text-[15px] font-light leading-[16px] text-black">admin@muvadesign.in</span>
+          <a href="mailto:contact@muvadesign.in" className="text-sm sm:text-[15px] font-light leading-[16px] text-black hover:text-gray-600 transition-colors">contact@muvadesign.in</a>
         </div>
         
         <div className="flex items-center space-x-4">

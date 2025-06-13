@@ -53,8 +53,8 @@ export const viewport = {
 };
 
 export const metadata = {
-  title: 'Next.js with Tailwind CSS',
-  description: 'A boilerplate project with Next.js and Tailwind CSS',
+  title: 'Muva Design',
+  description: 'Muvadesign is a design studio that creates beautiful and functional designs for your business.',
   icons: {
     icon: [{ url: '/favicon.ico', type: 'image/x-icon' }],
   },

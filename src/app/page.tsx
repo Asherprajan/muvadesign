@@ -72,8 +72,8 @@ const services = [
     className: 'lg:col-span-1',
   },
   {
-    title: 'Interactive Walkthroughs (Unreal)',
-    desc: 'Real-time navigable environments powered by Unreal Engine — perfect for sales or design validation.',
+    title: 'Furniture / Product Renders',
+    desc: 'High-quality visualizations of furniture or products for catalogs, marketing, and promotional use.',
     icon: (
       <svg
         width="60"
@@ -82,20 +82,14 @@ const services = [
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
+        <rect x="10" y="10" width="40" height="30" rx="2" stroke="#F15A24" strokeWidth="2" />
+        <circle cx="20" cy="20" r="3" stroke="#F15A24" strokeWidth="2" />
         <path
-          d="M15 20H45L38 15"
+          d="M10 30L25 25L40 35L50 30"
           stroke="#F15A24"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-        />
-        <path
-          d="M20 30H50L43 25"
-          stroke="#F15A24"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeOpacity="0.7"
         />
       </svg>
     ),
@@ -231,12 +225,7 @@ const projects = [
     location: "DIFC, Dubai, UAE",
     image: "/images/Limestone-House.jpg"
   },
-  {
-    name: "Private Residence",
-    type: "Private Entertainment Space / Home Theater",
-    location: "Mumbai, India",
-    image: "/images/Private-Residence.jpg"
-  },
+
   {
     name: "Grid Point Residences",
     type: "Mixed-Use Residential Development",
