@@ -10,8 +10,8 @@ const Header: React.FC = () => {
         <Image 
           src="/images/muva.png" 
           alt="Logo accent" 
-          width={80} 
-          height={96} 
+          width={150} 
+          height={150} 
           className="ml-1 sm:ml-2 bg-transparent"
         />
       </div>

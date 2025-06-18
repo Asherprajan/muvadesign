@@ -223,7 +223,7 @@ const projects = [
     name: "Private Residence",
     type: "Private Entertainment Space / Home Theater",
     location: "Mumbai, India",
-    image: "/images/Private-Residence1.jpg"
+    image: "/images/Private-Residence.jpg"
   },
   {
     name: "Grid Point Residences",
